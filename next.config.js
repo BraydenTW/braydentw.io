@@ -1,6 +1,4 @@
-const { withContentlayer } = require("next-contentlayer");
-
-module.exports = withContentlayer()({
+module.exports = {
     swcMinify: true,
     async redirects() {
         return [
@@ -11,4 +9,4 @@ module.exports = withContentlayer()({
           },
         ]
       },
-});
+};
