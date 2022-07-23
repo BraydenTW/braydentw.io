@@ -57,7 +57,7 @@ export default function MobileNavbar() {
       </div>
       {isMenuMounted && (
         <ul
-          className={`menu flex flex-col absolute m-10 bg-bg
+          className={`menu flex flex-col absolute bg-bg
             ${isMenuRendered && "menuRendered"}`}
         >
           {routes.map((item, index) => {
