@@ -16,7 +16,7 @@ import Testimonials from "@/components/home/Testimonials";
 //   };
 // }
 
-export default function Home({ allPosts }) {
+export default function Home() {
   return (
     <Page currentPage="Home" meta={{ title: "Home", desc: "My home page." }}>
       <Hero />
