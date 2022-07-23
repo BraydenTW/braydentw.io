@@ -1,0 +1,3 @@
+- when you click on a skill like Typescript for example, it would redirect to a page that shows all my projects I've used typecript on
+
+- convert devicon links to local SVGS

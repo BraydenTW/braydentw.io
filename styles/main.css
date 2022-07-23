@@ -1,0 +1,308 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;700&family=DM+Mono:wght@400;500&display=swap");
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  @apply bg-bg;
+}
+
+body::-webkit-scrollbar {
+  width: 8px;
+  background: transparent;
+}
+
+body::-webkit-scrollbar-track {
+  background: blue;
+  display: none;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #fff2;
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+}
+
+.landingSectionTitle::before {
+  content: "";
+  position: absolute;
+  left: 105%;
+  right: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 4px;
+  width: 100vw;
+  @apply bg-fun-pink;
+}
+
+@media (max-width: 768px) {
+  .landingSectionTitle::before {
+    left: 50%;
+    right: auto;
+    top: -20px;
+    transform: translate(-50%, -50%);
+    height: 8px;
+    width: 150px;
+    @apply bg-fun-pink;
+  }
+}
+
+/* Mobile Nav */
+
+.burger {
+  transition: opacity 300ms ease;
+  border: 0;
+  background: transparent;
+  width: 20px;
+  height: 20px;
+  position: relative;
+}
+
+.burger svg {
+  transform: translate(-50%, -50%) scale(1);
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+  transition: opacity 300ms ease, transform 300ms ease;
+}
+
+.burger svg[data-hide="true"] {
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0);
+}
+
+.menu {
+  margin: 0;
+  padding: 40px 20px 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 100;
+  opacity: 0;
+  left: 0;
+  transition: opacity 300ms ease, transform 300ms ease;
+}
+
+.menu li {
+  transform: translateX(-16px);
+  opacity: 0;
+  transition: opacity 300ms ease, transform 300ms ease, width 300ms ease,
+    border-color 300ms ease;
+  width: 0px;
+  white-space: nowrap;
+}
+
+.menuRendered {
+  opacity: 1;
+}
+
+.menuRendered li {
+  @apply border-gray-600 w-full;
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.menu > * + * {
+  margin-top: 24px;
+}
+
+.testimonialQuote::before {
+  content: "“";
+  position: absolute;
+  top: -10px;
+  left: -46px;
+  opacity: 0.75;
+  font-size: 80px;
+  @apply text-fun-pink;
+}
+
+/* BLOG */
+
+/* .prose {
+  line-height: 1.75 !important;
+  @apply max-w-4xl m-auto text-left;
+}
+
+.prose p {
+  @apply mb-4 text-lg font-normal;
+}
+
+.prose h2 {
+  @apply text-white font-bold text-3xl mb-2 mt-8;
+}
+
+.prose a {
+  @apply text-fun-pink underline;
+}
+.prose .anchor {
+  @apply absolute invisible;
+
+  margin-left: -1em;
+  padding-right: 0.5em;
+  width: 80%;
+  max-width: 700px;
+  cursor: pointer;
+}
+
+.anchor:hover {
+  @apply visible no-underline;
+}
+
+.prose a {
+  @apply transition-all;
+}
+
+.prose .anchor:after {
+  @apply text-fun-gray;
+  content: "#";
+}
+
+.prose *:hover > .anchor {
+  @apply visible no-underline;
+}
+
+.prose h2 {
+  @apply inline-block pb-1 pr-3 mb-6 w-auto border-b-4 border-fun-pink;
+}
+
+.blogSignature {
+  position: absolute;
+  background: url(/static/misc/signature.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  right: -100px;
+  top: 0px;
+  width: 145px;
+  height: 77px;
+  z-index: -10;
+}
+
+code {
+  @apply font-monospace;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  @apply text-gray-300;
+}
+
+.token.punctuation {
+  @apply text-gray-300;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+  @apply text-pink-400;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+  @apply text-purple-400;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+  @apply text-yellow-500;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+  @apply text-pink-600;
+}
+
+.token.function,
+.token.class-name {
+  @apply text-white;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+  @apply text-yellow-500;
+}
+
+code[class*="language-"],
+pre[class*="language-"] {
+  @apply text-white;
+}
+
+pre[class*="language-"] {
+  @apply px-5 py-3 border border-t-0 rounded-b-lg text-gray-200 border-fun-gray-darker overflow-x-scroll;
+}
+
+pre::-webkit-scrollbar {
+  display: none;
+}
+
+pre {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+/* }
+
+.rehype-code-title {
+  @apply px-5 py-3 font-monospace text-sm font-bold border border-b-0 rounded-t-lg text-gray-200 border-fun-gray-darker bg-fun-gray-darkest;
+}
+
+.rehype-code-title + pre {
+  @apply mt-0 rounded-t-none;
+}
+
+.highlight-line {
+  @apply block px-4 -mx-4 border-l-4 border-blue-500 bg-gray-800;
+} */
+
+/* --------------------------------------------------------- */
+
+@keyframes scaleDownIn {
+  from {
+    opacity: 0;
+    transform: scale(4) translateY(0px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0px);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.heroElem {
+  animation: scaleDownIn 1.5s cubic-bezier(0.87, 0, 0.13, 1);
+}
+
+.heroElem .sqD:not(.squiggle-hero-pop1) {
+  animation: float 2s infinite ease-in-out;
+}
+.heroTitle .sqD {
+  @apply scale-[0.8] lg:scale-100;
+}
+
+/* All svg squiggle decorations */
+.sqD {
+  @apply absolute z-[-10];
+}
