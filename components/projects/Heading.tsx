@@ -7,7 +7,7 @@ type HeadingProps = {
 function Heading({ tag }: HeadingProps) {
   return (
     <div
-      className={`${tag ? "pt-24 pb-20" : "py-24"} w-full text-center relative`}
+      className={`${tag ? "pt-10 pb-4 sm:pt-24 sm:pb-20" : "py-12 sm:py-20"} w-full text-center relative`}
     >
       {tag ? (
         <>
