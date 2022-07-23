@@ -24,7 +24,7 @@ function Hero() {
             src="/static/doodles/hero/nextjs.svg"
           />
           <img
-            className="sqD  bottom-[-300px] -right-1/4 sm:right-[-20%] lg:bottom-[-310px] lg:right-[-120px] w-[400px]"
+            className="sqD bottom-[-300px] -right-1/4 sm:right-[-20%] lg:bottom-[-310px] lg:right-[-120px] w-[400px]"
             style={{ animationDelay: "0.3s" }}
             src="/static/doodles/hero/brayden.svg"
           />
@@ -49,7 +49,7 @@ function Hero() {
             src="/static/doodles/hero/paintbrush.svg"
           />
           <img
-            className="sqD squiggle-hero-pop1 scale-1/2 top-[-110px] left-0 sm:top-[-130px] sm:left-[15%] lg:top-[-130px] lg:left-[120px]"
+            className="sqD squiggle-hero-pop1 hidden sm:block sm:top-[-130px] sm:left-[15%] lg:top-[-130px] lg:left-[120px]"
             src="/static/doodles/hero/pop1.svg"
           />
           <img
