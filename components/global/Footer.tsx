@@ -102,7 +102,7 @@ function Footer() {
           </div>
           <div className="mt-1">
             <a
-              href="mailto:brayden45.dev@gmail.com"
+              href="mailto:contact@braydentw.io"
               className="text-white font-bold"
             >
               Brayden Wright
