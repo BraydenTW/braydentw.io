@@ -18,7 +18,7 @@ function CTA() {
       </div>
 
       <img
-        className="sqD min-w-[1000px] bottom-[-100px] left-1/2 sm:bottom-[-150px] -translate-x-1/2 object-cover sm:min-w-[1100px]"
+        className="sqD min-w-[800px] bottom-[-100px] left-1/2 sm:bottom-[-150px] -translate-x-1/2 object-cover sm:min-w-[1100px]"
         style={{ zIndex: "-10" }}
         src="/static/doodles/hero/fancyLines.svg"
       />
