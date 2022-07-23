@@ -6,7 +6,7 @@ function Testimonials() {
   return (
     <div className="flex flex-col text-left max-w-md md:max-w-full w-full m-auto">
       <SectionTitle title="Why people love my work!" />
-      <div className="max-w-5xl m-auto md:min-h-[200px] grid grid-cols-1 gap-10 md:gap-10 md:grid-cols-3 items-start">
+      <div className="max-w-5xl m-auto md:max-h-[200px] grid grid-cols-1 gap-10 md:gap-10 md:grid-cols-3 items-start">
         {testimonials.map((item, index) => {
           return (
             <div
