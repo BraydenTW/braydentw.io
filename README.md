@@ -2,7 +2,7 @@
 
 Hey there! I'm Brayden and this is my lovely lovely portfolio built using **React, NextJS, and TailwindCSS**!
 
-## License
+## Guidelines
 
 **I humbly ask of you that you do your best to follow these rules:**
 
