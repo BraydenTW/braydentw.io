@@ -100,13 +100,13 @@ function Footer() {
               </span>
             </div>
           </div>
-          <div className="mt-1">
-            <a
+          <div className="mt-2 text-xs ">
+            Made by <a
               href="mailto:contact@braydentw.io"
-              className="text-white font-bold"
+              className="text-fun-gray-light font-medium"
             >
               Brayden Wright
-            </a>
+            </a>. All rights reserved.
           </div>
         </p>
       </div>
