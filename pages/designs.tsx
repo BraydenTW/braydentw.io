@@ -8,7 +8,7 @@ function designs() {
   return (
     <Page
       currentPage="Designs"
-      meta={{ title: "Designs", desc: "My designs." }}
+      meta={{ desc: "I'm an avid self-taught designer too! I publish all my web and creative designs on Dribbble also." }}
     >
       <Heading />
       <Projects />
