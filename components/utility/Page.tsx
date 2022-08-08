@@ -37,7 +37,7 @@ function Page({ currentPage, meta: { title, desc }, children }: PageProps) {
           property="og:description"
           content={desc}
         />
-        <meta property="og:image" content="./static/misc/og.png" />
+        <meta property="og:image" content="https://braydentw.io/static/misc/og.png" />
 
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://braydentw.io/" />
@@ -49,7 +49,7 @@ function Page({ currentPage, meta: { title, desc }, children }: PageProps) {
           property="twitter:description"
           content={desc}
         />
-        <meta property="twitter:image" content="./static/misc/og.png"></meta>
+        <meta property="twitter:image" content="https://braydentw.io/static/misc/og.png"></meta>
       </Head>
 
       <main className="p-5 w-full flex-1 text-center">
