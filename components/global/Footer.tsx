@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import { footer } from "@/data/global";
-import Image from 'next/image';
+import Image from "next/image";
 
 function Footer() {
   return (
@@ -18,7 +18,16 @@ function Footer() {
                   return (
                     <div key={index} className="my-4">
                       {item.leavesWebsite ? (
-                        <a href={item.link} target="_blank">
+                        <a
+                          href={item.link}
+                          target="_blank"
+                          className="items-center flex"
+                        >
+                          {item.icon && (
+                            <span className="pr-2 -mb-1">
+                              <Image src={item.icon} width={20} height={20} />
+                            </span>
+                          )}
                           {item.name}
                         </a>
                       ) : (
@@ -101,17 +110,24 @@ function Footer() {
             </div>
           </div>
           <div className="mt-2 text-xs ">
-            Made by <a
+            Made by{" "}
+            <a
               href="mailto:contact@braydentw.io"
               className="text-fun-gray-light font-medium"
             >
               Brayden Wright
-            </a>. All rights reserved.
+            </a>
+            . All rights reserved.
           </div>
         </p>
       </div>
       <div className="mt-8 text-center sm:text-right sm:-mt-12">
-        <a className="w-auto inline-flex items-center sm:w-auto font-bold flex-shrink text-xs border border-fun-pink px-4 py-2 rounded-xl text-fun-pink cursor-pointer opacity-50" href="https://github.com/braydentw/braydentw.io" target="_blank" rel="nooreferrer">
+        <a
+          className="w-auto inline-flex items-center sm:w-auto font-bold flex-shrink text-xs border border-fun-pink px-4 py-2 rounded-xl text-fun-pink cursor-pointer opacity-50"
+          href="https://github.com/braydentw/braydentw.io"
+          target="_blank"
+          rel="nooreferrer"
+        >
           <Image
             src="/static/icons/github.svg"
             width={16}
