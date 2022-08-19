@@ -48,6 +48,9 @@ module.exports = {
       },
       animation: {
         'fadeInAndBounce': 'fadeIn 3s ease-out',
+      },
+      willChange: {
+        'projectCard': 'border-color, opacity, transform',
       }
     },
   },
