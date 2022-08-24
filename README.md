@@ -4,7 +4,7 @@ Hey there! I'm Brayden and this is my lovely lovely portfolio built using **Reac
 
 ## Guidelines
 
-⚠ **I ask of you that you do your best to follow these rules:**
+> **Note**: **I ask of you that you do your best to follow these rules:**
 
 1. You can **use** this code and style **as inspiration**.
 2. **Please do not copy it directly**.
