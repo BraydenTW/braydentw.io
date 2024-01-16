@@ -16,7 +16,7 @@ const projects: Project[] = [
     title: "BuildFaster",
     desc: "Beautiful HTML templates ready-made for your next landing page.",
     img: "/static/projects/buildfaster.png",
-    link: "https://buildfaster.co/",
+    link: "https://buildfaster-io.vercel.app/",
     tags: ["HTML", "CSS", "Javascript", "Gumroad"],
   },
   {
